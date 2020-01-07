@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+.clearfix::after {
+    content: '. ';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+     
+}
+
+/* ------------------------------ */
+/* REUSABLE COMPONENTS */
+/* ------------------------------ */
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+.box{
+    font-size: 20px;
+    color: #B22222;
+}
+
+h1,
+h3{
+ margin-top: 20px;
+  font-size: 20px;
+  text-align: left;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #000000;
+}
+
+h3{
+ margin-top: 40px;
+}
+
+/* ------------------------------------ */
+/* MAIN NAV */
+/* ------------------------------------ */
+.main-nav{
+    float: left;
+    list-style: none;
+    margin-top: 5px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 100px;
+    float: left;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: #1a1818;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-family: sans-serif;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+   background-color: #B22222; 
+}
+
+/* Sticky navi */
+.sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  -webkit-box-shadow: 0 2 2px #fafafa;
+  box-shadow: 0 2 2px #fafafa;
+  z-index: 9999;
+}
+
+.main-nav{ margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 16px 0;
+    color: #555;
+}
+
+
+/* -------------------------------- */
+/* PHOTO IMG */
+/* -------------------------------- */
+.pure-photo {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+/* ------------------------ */
+/* PARAGRAPH */
+/* ------------------------ */
+.long-copy{
+   margin-top: 20px;
+    font-size: 15px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    color: #000000;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+/* ------------------------------------- */
+/* SECTION-PANEL LEFT  */
+/* ------------------------------------- */
+.section-panel{
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: 10px;
+  background: #fff;
+}
+
+.section-panel .row-panel{
+    justify-content: flex-end;
+    display: flex;
+     align-items: center;
+}
+
+.panel-image{
+   flex: 0 0 auto;
+   width: 600px;
+   position: relative;
+   z-index: 4;
+}
+
+.section-panel .text{
+    margin-left: 4.85vw;
+    flex: 0 0 auto;
+    width: 492px;
+    position: relative;
+    z-index: 5;
+    max-width: 492px;
+}
+
+.section-panel .text .flush-panel{
+    font-size: 40px;
+    margin-left: -3px;
+    margin-bottom: 3.731vw;
+    line-height: 1.2em;
+    letter-spacing: -.01em;
+}
+
+.flush-panel{
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: .5px;
+}
+
+.section-panel .text .long-panel{
+    font-size: 16px;
+    font-size: 1.19vw;
+    line-height: 2em;
+}
+
+.long-panl{
+    color: #000000;
+    margin: 0;
+}
+
+.section-panel .right{
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 1px;
+    background: #fff;
+}
+
+.section-panel .right .row-panel{
+    justify-content: flex-start;
+}
+
+.section-panel .right .image-right{
+    order: 2;
+}
+
+.image-right{
+    flex: 0 0 auto;
+    width: 40%;
+    position: relative;
+    z-index: 4;
+}
+
+.section-panel .right .text{
+    margin-left: 0;
+    margin-right: 4.85vw;
+}
+
+.section-panel .text .panel-right{
+    font-size: 40px;
+    font-size: 2.99vw;
+    margin-right: -3px;
+    margin-bottom: 3.731vw;
+    line-height: 1.2em;
+    letter-spacing: -.01em;
+}
+
+.panel-right{
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: .5px;
+    margin: 0;
+}
+
+/* -------------------------------- */
+/* FOOTER */
+/* -------------------------------- */
+.footer-main-div{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background: #e0d9d9;
+  padding: 20px 0px;
+}
+
+
+/* -------------------------------------------- */
+/* BOTTOM NAV */
+/* -------------------------------------------- */
+ol li, ul li{
+    font-size: 14px;
+    line-height: px;
+}
+
+ol li, ul li{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+ol li, ul li{
+    margin: 12px 0;
+    line-height: 22px;
+}
+
+
+li a:link,
+li a:visited{
+    padding: 8px 0;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    font-family: sans-serif;
+}
+
+

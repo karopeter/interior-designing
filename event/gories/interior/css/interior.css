@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+.clearfix::after {
+    content: '. ';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+     
+}
+
+/* ------------------------------ */
+/* REUSABLE COMPONENTS */
+/* ------------------------------ */
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* ------------------------------ */
+/* HEADER */
+/* ------------------------------ */
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img/decoration2.jpg);
+    min-height: 180px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1,
+h2{
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin-left: 20px;
+  font-family: sans-serif;
+}
+
+h1{
+ text-align: center;
+ font-size: 70px;
+ color: #fff;
+}
+
+h2{
+ margin-top: 20px;
+ text-align: left;
+ font-size: 20px;
+ color: #1a1818;
+}
+
+/* ------------------------------------ */
+/* MAIN NAV */
+/* ------------------------------------ */
+.main-nav{
+    float: left;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 120px;
+    float: left;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: #1a1818;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-family: sans-serif;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+   background-color: #B22222; 
+} 
+
+/* Sticky navi */
+.sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0 2px 2px #efcbcb;
+  box-shadow: 0 2px 2px #efcbcb;
+  z-index: 9999;
+}
+
+.main-nav{ margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 20px 0;
+    color: #555; 
+}
+
+/* -------------------------------- */
+/* PHOTO IMG */
+/* -------------------------------- */
+.pure-photo {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+
+.true-photo{
+  width: 60%;
+  margin-top: 20px;
+  height: 90%;
+  margin-left: 30px;
+  overflow: hidden;
+}
+
+
+
+/* ---------------------------------- */
+/* SECTION-QUALITY */
+/* ---------------------------------- */
+.section-quality{
+    background-image: url(img/true.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+/* ---------------------------------- */
+/* PARAGRAHY */
+/* ---------------------------------- */
+.long-copy,
+.object,
+.nodes{
+   text-align: left;
+   letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-left: 20px;
+    color: #1a1818;
+    font-family: sans-serif;
+}
+.long-copy{
+  font-size: 70px; 
+  margin-top: 40px;
+}
+
+.object{
+    font-size: 60px;
+    margin-top: 30px;
+    
+}
+
+.nodes{
+    font-size: 20px;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+
+.demi{
+  color: #000000;
+}
+
+ /* -------------------------------------- */
+/*  SECTION TIPS */
+/* --------------------------------------- */
+.section-tips{
+  padding: 0;
+}
+
+.tips-showcase{
+  list-style: none;
+  width: 100%;
+}
+
+.tips-showcase li{
+  display: block;
+  float: left;
+  margin-right: 30px;
+  margin-top: 20px;
+  width: 25%;
+}
+
+.tips-photo{
+  width: 100%;
+  margin: 0;
+  height: auto;
+  margin-left: 100px;
+  
+  overflow: hidden;
+  background-color: #000;
+}
+
+.tips-photo img{
+  opacity: 0.7;
+  width: 100%;
+  height: 300px;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.tips-photo img:hover{
+  opacity: 1;
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+} 

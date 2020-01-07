@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+.clearfix::after {
+    content: '. ';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+     
+}
+
+/* ------------------------------ */
+/* REUSABLE COMPONENTS */
+/* ------------------------------ */
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box{
+    font-size: 20px;
+    color: #B22222;
+}
+
+.item-product{
+    padding: 1%;
+}
+
+/* ------------------------------------ */
+/* MAIN NAV */
+/* ------------------------------------ */
+.main-nav{
+    float: left;
+    list-style: none;
+    margin-top: 5px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 100px;
+    float: left;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: #1a1818;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-family: sans-serif;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+   background-color: #B22222; 
+}
+
+/* Sticky navi */
+.sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  -webkit-box-shadow: 0 2px 2px #fafafa;
+  box-shadow: 0 2px 2px #fafafa;
+  z-index: 9999;
+}
+
+.main-nav{ margin-top: 5px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 16px 0;
+    color: #555;
+}
+
+
+
+/* ------------------------------------ */
+/* HEADER */
+/* ------------------------------------ */
+h1{
+ margin-top: 20px;
+ text-align: left;
+ margin-left: 20px;
+ font-size: 20px;
+ letter-spacing: 1px;
+ font-family: sans-serif;
+ color: #1a1818;
+}
+
+/* ------------------------------------------------------- */
+/* SECTIONS PLANS */
+/* ------------------------------------------------------- */
+
+.section-plans{
+    background-color: #f4f4f4;
+}
+
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    -webkit-box-shadow: 0 2px 2px #efefef;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.paln-box div:first-child{
+    background-color: #fcfcfc;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border: 0;
+}
+
+/* ---------------------------------- */
+/* BUTTON */
+/* ---------------------------------- */
+.btn:link, 
+.btn:visited, 
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #1a1818;
+    margin-top: 90px;
+   -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+   transition: background-color 0.2s, border 0.2s, color 0.2s;
+   transition: background-color 0.2s, border 0.2s, color 0.2s;
+    
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #c91f1f;
+  color: #1a1818;
+}
+.btn:hover,
+.btn:active,
+input[type=submit]:hover
+input[type=submit]:active{
+  background-color: #c91f1f;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+  border: 1px solid #c9331f;
+  color: #1a1818;
+}
+
+
+/* ---------------------------------- */
+/*  ITEM PHOTO */
+/* ---------------------------------- */
+.item-container{
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.body-photo{
+  width: 90%;
+  margin-top: 20px;
+  height: 70%;
+  margin-left: 30px;
+  overflow: hidden;
+}
+
+/* -------------------------------- */
+/* FOOTER */
+/* -------------------------------- */
+.footer-main-div{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background: #e0d9d9;
+  padding: 20px 0px;
+}
+
+/* -------------------------------------------- */
+/* BOTTOM NAV */
+/* -------------------------------------------- */
+ol li, ul li{
+    font-size: 14px;
+    line-height: px;
+}
+
+ol li, ul li{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+ol li, ul li{
+    margin: 12px 0;
+    line-height: 22px;
+}
+
+
+li a:link,
+li a:visited{
+    padding: 8px 0;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    font-family: sans-serif;
+}
+
+
+
+
